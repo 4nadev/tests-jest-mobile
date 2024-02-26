@@ -1,6 +1,6 @@
 import { getNextDays } from "./getNextDays"
 
-test('should first', () => { 
+it('should first', () => { 
     const days = getNextDays();
     expect(days.length).toBe(5);
  })
