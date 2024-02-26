@@ -1,6 +1,12 @@
-import { getNextDays } from "./getNextDays"
+import { getNextDays } from './getNextDays';
 
-it('should first', () => { 
-    const days = getNextDays();
-    expect(days.length).toBe(5);
- })
+describe('getNextDays', () => {
+	it('should 2', () => {
+		const days = getNextDays();
+		expect(days.length).toBe(5);
+	});
+	it('should 2', () => {
+		const days = getNextDays();
+		expect(days.length).toBe(5);
+	});
+});
