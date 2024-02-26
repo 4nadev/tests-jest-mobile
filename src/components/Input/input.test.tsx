@@ -3,9 +3,9 @@ import { Input } from '@components/Input';
 import { shouldUseActivityState } from 'react-native-screens';
 
 describe('Componet: Input', () => {
-	it('Should be render without activity indicator', () => {
-	 render(<Input isLoading />);
-	const ActivityIndicator = screen.getByTestId('activity-indicator');
-    console.log(ActivityIndicator)
-	});
+    it('Should be render without activity indicator', () => {
+        render(<Input  />);
+        const ActivityIndicator = screen.queryByTestId('activity-indicator');
+        expect(ActivityIndicator).toBeNull();
+    });
 });
